@@ -1,0 +1,1 @@
+/home/louise/Development/rover_project_gazebo/build/wave_rover_description/ament_cmake_environment_hooks/local_setup.bash
