@@ -39,7 +39,10 @@
       <link name="camera_link">
         <visual>
           <geometry>
-            <mesh filename="package://wave_rover_description/meshes/realsense_camera.stl" scale="0.001 0.001 0.001"/>
+            <mesh filename="package://wave_rover_description/meshes/d435.stl" scale="0.01 0.01 0.01"/>
+            <material name="blue">
+		<color rgba="0.1 0.1 1.0 1.0"/>
+  	    </material>
           </geometry>
         </visual>
       </link>
@@ -47,7 +50,7 @@
       <joint name="camera_mount" type="fixed">
         <parent link="camera_bracket_link"/>
         <child link="camera_link"/>
-        <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+        <origin xyz="0.0 -0.03 0.02" rpy="0.349 0 0"/>
       </joint>
     
       <!-- Gazebo plugins -->

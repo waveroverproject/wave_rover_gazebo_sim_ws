@@ -1,4 +1,5 @@
 /home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/d435.dae
+/home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/d435.stl
 /home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/realsense_bracket.stl
 /home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/realsense_camera.stl
 /home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/wave_rover_model.stl
