@@ -1,1 +1,1 @@
-/home/louise/Development/rover_project_gazebo/build/wave_rover_description/ament_cmake_environment_hooks/local_setup.sh
+/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_description/ament_cmake_environment_hooks/local_setup.sh

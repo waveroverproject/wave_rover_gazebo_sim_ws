@@ -1,0 +1,4 @@
+import sys
+if sys.prefix == '/usr':
+    sys.real_prefix = sys.prefix
+    sys.prefix = sys.exec_prefix = '/home/louise/Development/rover_project/rover_project_gazebo_ws/install/test_box_launch'
