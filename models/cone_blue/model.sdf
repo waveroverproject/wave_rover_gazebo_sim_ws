@@ -11,10 +11,11 @@
           </mesh>
         </geometry>
         <material>
-          <ambient>0 0 1 1</ambient>
-          <diffuse>0 0 1 1</diffuse>
+          <ambient>0.0 0.2 0.8 1</ambient>
+  	  <diffuse>0.0 0.2 0.8 1</diffuse>
         </material>
       </visual>
+
       <collision name="collision">
         <geometry>
           <mesh>
@@ -23,6 +24,18 @@
           </mesh>
         </geometry>
       </collision>
+
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
     </link>
   </model>
 </sdf>
