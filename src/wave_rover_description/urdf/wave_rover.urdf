@@ -17,7 +17,6 @@
     <collision>
       <geometry>
         <box size="0.3 0.2 0.1"/>
-        <!-- crude collision approximation -->
       </geometry>
     </collision>
     <inertial>
@@ -25,12 +24,11 @@
       <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
     </inertial>
   </link>
-  <!-- Bracket Stand (support box for bracket + camera) -->
+  <!-- Bracket Stand -->
   <link name="bracket_stand_link">
     <visual>
       <geometry>
         <box size="0.045 0.11 0.04"/>
-        <!-- 4.5cm x 11cm x 4cm -->
       </geometry>
       <material name="black">
         <color rgba="0.1 0.1 0.1 1.0"/>
@@ -41,9 +39,8 @@
     <parent link="base_link"/>
     <child link="bracket_stand_link"/>
     <origin rpy="0 0 0" xyz="0.0 0.0042 0.07"/>
-    <!-- raise box to sit on top of base -->
   </joint>
-  <!-- Bracket -->
+  <!-- Camera Bracket -->
   <link name="camera_bracket_link">
     <visual>
       <geometry>
@@ -55,7 +52,6 @@
     <parent link="bracket_stand_link"/>
     <child link="camera_bracket_link"/>
     <origin rpy="0 0 0" xyz="0.0 -0.04 0.02"/>
-    <!-- place bracket on top of box -->
   </joint>
   <!-- Camera -->
   <link name="camera_link">
@@ -72,9 +68,15 @@
     <parent link="camera_bracket_link"/>
     <child link="camera_link"/>
     <origin rpy="0.349 0 0" xyz="0.0 -0.03 0.02"/>
-    <!-- 20° tilt down -->
   </joint>
-  <!-- Gazebo diff drive plugin -->
+  <!-- Optical Frame for Camera -->
+  <link name="camera_link_optical"/>
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="camera_link"/>
+    <child link="camera_link_optical"/>
+    <origin rpy="-1.5708 0 -1.5708" xyz="0 0 0"/>
+  </joint>
+  <!-- Gazebo Plugins -->
   <gazebo>
     <plugin filename="libgazebo_ros_diff_drive.so" name="diff_drive_controller">
       <ros>
@@ -82,14 +84,11 @@
       </ros>
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
-      
-      ...
-    
+      <!-- Add other necessary parameters here -->
     </plugin>
   </gazebo>
-  <!-- Gazebo depth camera plugin -->
   <gazebo reference="camera_link">
-    <sensor name="realsense_sim" type="depth">
+    <sensor name="camera" type="depth">
       <update_rate>30.0</update_rate>
       <camera>
         <horizontal_fov>1.3962634</horizontal_fov>
@@ -103,14 +102,16 @@
           <far>5.0</far>
         </clip>
       </camera>
-      <plugin filename="libgazebo_ros_depth_camera.so" name="gazebo_ros_depth_camera">
+      <plugin filename="libgazebo_ros_camera.so" name="camera_controller">
         <ros>
           <namespace>/camera</namespace>
         </ros>
         <camera_name>camera</camera_name>
-        <image_topic_name>color/image_raw</image_topic_name>
+        <image_topic_name>image_raw</image_topic_name>
         <depth_image_topic_name>depth/image_raw</depth_image_topic_name>
         <info_topic_name>camera_info</info_topic_name>
+        <point_cloud_topic_name>depth/points</point_cloud_topic_name>
+        <frame_name>camera_link_optical</frame_name>
       </plugin>
     </sensor>
   </gazebo>
