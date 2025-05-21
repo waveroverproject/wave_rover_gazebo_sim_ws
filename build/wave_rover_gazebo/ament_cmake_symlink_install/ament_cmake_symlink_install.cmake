@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_gazebo/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/louise/Development/rover_project/rover_project_gazebo_ws/install/wave_rover_gazebo/${destination}")
+      set(destination "/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_gazebo/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,44 +310,44 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/wave_rover_gazebo/environment")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/wave_rover_gazebo/environment")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/wave_rover_gazebo")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/wave_rover_gazebo")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/wave_rover_gazebo")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/wave_rover_gazebo")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/wave_rover_gazebo")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_index/share/ament_index/resource_index/packages/wave_rover_gazebo" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig.cmake" "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig-version.cmake" "DESTINATION" "share/wave_rover_gazebo/cmake")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig.cmake" "/home/louise/Development/rover_project/rover_project_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig-version.cmake" "DESTINATION" "share/wave_rover_gazebo/cmake")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig.cmake" "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig-version.cmake" "DESTINATION" "share/wave_rover_gazebo/cmake")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig.cmake" "/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/wave_rover_gazebo/ament_cmake_core/wave_rover_gazeboConfig-version.cmake" "DESTINATION" "share/wave_rover_gazebo/cmake")
 
-# install(FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo/package.xml" "DESTINATION" "share/wave_rover_gazebo")
-ament_cmake_symlink_install_files("/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/rover_project_gazebo_ws/src/wave_rover_gazebo/package.xml" "DESTINATION" "share/wave_rover_gazebo")
+# install(FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo/package.xml" "DESTINATION" "share/wave_rover_gazebo")
+ament_cmake_symlink_install_files("/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo" FILES "/home/louise/Development/rover_project/wave_rover_gazebo_ws/src/wave_rover_gazebo/package.xml" "DESTINATION" "share/wave_rover_gazebo")

@@ -1,1 +1,1 @@
-/home/louise/Development/rover_project/rover_project_gazebo_ws/build/test_box_launch/launch/display_box.launch.py
+/home/louise/Development/rover_project/wave_rover_gazebo_ws/build/test_box_launch/launch/display_box.launch.py

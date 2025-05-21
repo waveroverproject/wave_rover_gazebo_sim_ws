@@ -1,0 +1,94 @@
+<sdf version='1.7'>
+  <model name='wave_rover'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0 0 0 0 -0 0</pose>
+        <mass>2</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.2 0.1</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://wave_rover_description/meshes/wave_rover_model.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__bracket_stand_link_visual_1'>
+        <pose>0 0.0042 0.07 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.045 0.11 0.04</size>
+          </box>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__camera_bracket_link_visual_2'>
+        <pose>0 -0.0358 0.09 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://wave_rover_description/meshes/realsense_bracket.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__camera_link_visual_3'>
+        <pose>0 -0.0658 0.11 0.349 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>model://wave_rover_description/meshes/d435.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <sensor name='realsense_sim' type='depth'>
+        <update_rate>30</update_rate>
+        <camera>
+          <horizontal_fov>1.39626</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>5</far>
+          </clip>
+        </camera>
+        <plugin name='gazebo_ros_depth_camera' filename='libgazebo_ros_depth_camera.so'>
+          <ros>
+            <namespace>/camera</namespace>
+          </ros>
+          <camera_name>camera</camera_name>
+          <image_topic_name>color/image_raw</image_topic_name>
+          <depth_image_topic_name>depth/image_raw</depth_image_topic_name>
+          <info_topic_name>camera_info</info_topic_name>
+        </plugin>
+        <pose>0 -0.0658 0.11 0.349 -0 0</pose>
+      </sensor>
+    </link>
+    <static>0</static>
+    <plugin name='diff_drive_controller' filename='libgazebo_ros_diff_drive.so'>
+      <ros>
+        <namespace>/wave_rover</namespace>
+      </ros>
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+    </plugin>
+  </model>
+</sdf>
