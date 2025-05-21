@@ -10,4 +10,5 @@ Custom tracks.
 ![image](https://github.com/user-attachments/assets/383d5c66-a3c4-49bc-ad41-f0b44ab5fc89)
 
 In the Gazebo sim.
-![image](https://github.com/user-attachments/assets/73f65672-08c5-4977-b93e-865839c70780)
+![image](https://github.com/user-attachments/assets/c1a38ed7-a634-4eed-9590-a49b017c90d2)
+
