@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
   <model name="wave_rover">
+
     <!-- Base Link -->
     <link name="base_link">
       <pose>0 0 0 0 0 0</pose>
@@ -65,7 +66,7 @@
 
     <!-- Camera Link -->
     <link name="camera_link">
-      <pose>0 -0.0658 0.11 0.349 0 0</pose>
+      <pose>0 -0.0658 0.11 0 0 0</pose> <!-- No rotation; camera faces +X -->
       <visual name="camera_visual">
         <geometry>
           <mesh>
@@ -78,7 +79,8 @@
         </material>
       </visual>
       <sensor name="depth_camera" type="depth">
-        <pose>0 0 0 0 0 0</pose>
+        <!-- Apply 20° tilt down AND rotate sensor to face +X -->
+        <pose>0 0 0 0.349 0 -1.5708</pose> <!-- RPY: pitch 20°, yaw -90° -->
         <update_rate>30.0</update_rate>
         <camera>
           <horizontal_fov>1.3962634</horizontal_fov>
@@ -108,10 +110,10 @@
 
     <!-- Camera Optical Frame Link -->
     <link name="camera_link_optical">
-      <pose>0 -0.0658 0.11 -1.2218 0 -1.5708</pose>
+      <pose>0 0 0 -1.5708 0 -1.5708</pose> <!-- ROS optical frame: Z forward, X right, Y down -->
     </link>
 
-    <!-- Joints -->
+    <!-- Fixed Joints -->
     <joint name="bracket_stand_mount" type="fixed">
       <parent>base_link</parent>
       <child>bracket_stand_link</child>
@@ -142,6 +144,7 @@
     </plugin>
 
     <static>false</static>
+
   </model>
 </sdf>
 
