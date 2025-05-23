@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <robot name="wave_rover" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!-- Base -->
@@ -74,6 +75,7 @@
 
   <!-- Optical Frame for Camera -->
   <link name="camera_link_optical"/>
+
   <joint name="camera_optical_joint" type="fixed">
     <parent link="camera_link"/>
     <child link="camera_link_optical"/>
@@ -119,6 +121,11 @@
         <frame_name>camera_link_optical</frame_name>
       </plugin>
     </sensor>
+  </gazebo>
+  
+  <gazebo>
+  <preserveFixedJoint>true</preserveFixedJoint>
+  <disableFixedJointLumping>true</disableFixedJointLumping>
   </gazebo>
 
 </robot>

@@ -115,4 +115,8 @@
       </plugin>
     </sensor>
   </gazebo>
+  <gazebo>
+    <preserveFixedJoint>true</preserveFixedJoint>
+    <disableFixedJointLumping>true</disableFixedJointLumping>
+  </gazebo>
 </robot>
