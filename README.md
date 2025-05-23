@@ -12,3 +12,29 @@ Custom tracks.
 In the Gazebo sim.
 ![image](https://github.com/user-attachments/assets/c1a38ed7-a634-4eed-9590-a49b017c90d2)
 
+## Learnings
+**URDF: Joint origins define the pose of the child link relative to the parent link.**
+
+**SDF: Each link's <pose> is defined relative to its parent link, and joint poses are typically relative to the child link.**
+
+Given this, when converting from URDF to SDF, you need to compute the absolute pose of each link by cumulatively applying the transformations defined by the joints in the URDF. This ensures that each link in the SDF has the correct position and orientation relative to the base link.
+
+Here's how you can compute the poses:
+
+    Start with the base link: Assume its pose is at the origin: (0, 0, 0, 0, 0, 0).
+
+    Apply joint transformations: For each subsequent link, apply the joint's translation and rotation to the parent's pose to get the child's pose.
+
+For example, if a joint has:
+
+    Translation: (x, y, z)
+    Gazebo Simulation
+
+    Rotation: (roll, pitch, yaw)
+
+Then the child link's pose is:
+
+    Position: Parent's position plus the rotated translation vector.
+    sdformat.org
+
+    Orientation: Parent's orientation combined with the joint's rotation.
