@@ -36,6 +36,5 @@ For example, if a joint has:
 Then the child link's pose is:
 
     Position: Parent's position plus the rotated translation vector.
-    sdformat.org
 
     Orientation: Parent's orientation combined with the joint's rotation.
