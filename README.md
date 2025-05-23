@@ -13,6 +13,7 @@ In the Gazebo sim.
 ![image](https://github.com/user-attachments/assets/c1a38ed7-a634-4eed-9590-a49b017c90d2)
 
 ## Learnings
+### URDF to SDF pose transformations
 **URDF: Joint origins define the pose of the child link relative to the parent link.**
 
 **SDF: Each link's <pose> is defined relative to its parent link, and joint poses are typically relative to the child link.**
