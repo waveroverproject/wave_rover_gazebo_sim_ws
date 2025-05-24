@@ -11,6 +11,8 @@ Custom tracks.
 
 In the Gazebo sim.
 ![image](https://github.com/user-attachments/assets/c1a38ed7-a634-4eed-9590-a49b017c90d2)
+![image](https://github.com/user-attachments/assets/51a6e535-0df8-4e2d-8738-be085da67fe3)
+
 
 ## Learnings
 ### URDF to SDF pose transformations
