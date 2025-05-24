@@ -4,6 +4,7 @@
   <!-- Base -->
   <link name="base_link">
     <visual>
+    <pose>0 0 0 0 0 0</pose>
       <geometry>
         <mesh filename="package://wave_rover_description/meshes/wave_rover_model.stl" scale="0.001 0.001 0.001"/>
       </geometry>
@@ -158,6 +159,12 @@
     <preserveFixedJoint>true</preserveFixedJoint>
     <disableFixedJointLumping>true</disableFixedJointLumping>
   </gazebo>
+  
+   <!-- Ensure robot is dynamic -->
+  <gazebo>
+    <static>false</static>
+  </gazebo>
+
 
 </robot>
 
