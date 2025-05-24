@@ -39,7 +39,7 @@ def generate_launch_description():
         arguments=[
             "-entity", "wave_rover",
             "-file", sdf_file,
-            "-x", "0", "-y", "0", "-z", "0.1"
+            "-x", "0", "-y", "0", "-z", "0.01"
         ],
         output="screen"
     )
