@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 launch/sim.launch.py
+launch/simulator.launch.py
 launch_sim/__init__.py
 launch_sim.egg-info/PKG-INFO
 launch_sim.egg-info/SOURCES.txt

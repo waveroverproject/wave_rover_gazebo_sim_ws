@@ -1,3 +1,5 @@
+import os
+from glob import glob
 from setuptools import find_packages, setup
 
 package_name = 'launch_sim'
@@ -10,7 +12,9 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/launch_sim/launch', ['launch/sim.launch.py']),
+        #('share/launch_sim/launch', ['launch/sim.launch.py']),
+        
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,

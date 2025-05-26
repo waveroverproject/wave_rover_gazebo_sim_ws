@@ -43,6 +43,34 @@ def generate_launch_description():
         ],
         output="screen"
     )
+    
+    # robot_description = Command([
+    # FindExecutable(name="xacro"), " ",
+    # PathJoinSubstitution([
+    # FindPackageShare("wave_rover_description"), "urdf",
+    # 	"wave_rover.urdf.xacro"
+    # 	])
+    # ])
+    
+    # robot_spawn_node = Node(
+    # package="gazebo_ros",
+    # executable="spawn_entity.py",
+    # arguments=["-topic","robot_description",
+    # "-entity","robot"],
+    # output="screen"
+    
+    # robot_state_publisher_node = Node(
+    # 	package="robot_state_publisher",
+    #	executable="robot_state_publisher",
+    #	parameters="[{"robot_description" : robot_description}],
+    #	output="screen"
+    # )
+    
+    # joint_state_publisher_node = Node(
+    #	package="joint_state_publisher",
+    #	executable="joint_state_publisher",
+    #	output="screen"
+    # )   
 
     return LaunchDescription([
         set_gazebo_model_path,
