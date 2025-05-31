@@ -13,7 +13,7 @@ def generate_launch_description():
 
     # === File paths ===
     model_rel_path = "urdf/rover.urdf.xacro"
-    world_rel_path = "worlds/oasis.world"
+    world_rel_path = "worlds/empty.world"
 
     model_path = os.path.join(
         get_package_share_directory("wave_rover_description"), model_rel_path)

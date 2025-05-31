@@ -1,3 +1,4 @@
+/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/Old/older/rover_body.stl
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/Old/rover_body.stl
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/Old/wave_rover_model.stl
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/meshes/back_left_wheel.stl
@@ -13,6 +14,7 @@
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/old/wave_rover.sdf
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/out.urdf
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/rover.gazebo
+/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/rover.urdf
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/rover.urdf.xacro
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/wave_rover.config
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/urdf/wave_rover.sdf
@@ -32,6 +34,7 @@
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/models/cone_yellow/meshes/cone.stl
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/models/cone_yellow/model.config
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/models/cone_yellow/model.sdf
+/home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/worlds/empty.world
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/worlds/oasis.world
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/worlds/small_circle.world
 /home/louise/Development/rover_project/wave_rover_gazebo_ws/install/wave_rover_description/share/wave_rover_description/worlds/small_track_bean.world

@@ -73,14 +73,10 @@
         <namespace>/wave_rover</namespace>
       </ros>
       <num_wheel_pairs>2</num_wheel_pairs>
-      <left_joints>
-        <left_joint>front_left_wheel_joint</left_joint>
-        <left_joint>back_left_wheel_joint</left_joint>
-      </left_joints>
-      <right_joints>
-        <right_joint>front_right_wheel_joint</right_joint>
-        <right_joint>back_right_wheel_joint</right_joint>
-      </right_joints>
+      <left_joint>front_left_wheel_joint</left_joint>
+      <left_joint>back_left_wheel_joint</left_joint>
+      <right_joint>front_right_wheel_joint</right_joint>
+      <right_joint>back_right_wheel_joint</right_joint>
       <wheel_separation>0.11730000000000002</wheel_separation>
       <wheel_diameter>0.08</wheel_diameter>
       <max_wheel_torque>5000</max_wheel_torque>

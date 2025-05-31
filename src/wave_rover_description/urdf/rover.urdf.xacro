@@ -50,7 +50,7 @@
     <visual>
     <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="package://wave_rover_description/meshes/wave_rover_model.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://wave_rover_description/meshes/rover_body.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
         <color rgba="0.6 0.6 0.6 1.0"/>
@@ -73,7 +73,7 @@
       <geometry>
         <box size="0.045 0.11 0.04"/>
       </geometry>
-      <material name="black">
+      <material name="grey">
         <color rgba="0.1 0.1 0.1 1.0"/>
       </material>
     </visual>
