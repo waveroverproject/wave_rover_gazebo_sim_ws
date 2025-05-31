@@ -43,6 +43,8 @@ Then the child link's pose is:
 
 
 ### Gazebo no camera found bug
-Need to source the Gazebo setup file if this error is gotten on build of the world file `gazebo::rendering::Camera*]: Assertion `px != 0' failed.` :
-This is the fix:
-`. /usr/share/gazebo/setup.sh`
+Need to source the Gazebo setup file if this error is gotten on build of the world file 
+```gazebo::rendering::Camera*]: Assertion `px != 0' failed.```
+
+This is the fix
+```. /usr/share/gazebo/setup.sh```
