@@ -40,3 +40,9 @@ Then the child link's pose is:
     Position: Parent's position plus the rotated translation vector.
 
     Orientation: Parent's orientation combined with the joint's rotation.
+
+
+### Gazebo no camera found bug
+Need to source the Gazebo setup file if this error is gotten on build of the world file `gazebo::rendering::Camera*]: Assertion `px != 0' failed.` :
+This is the fix:
+`. /usr/share/gazebo/setup.sh`
