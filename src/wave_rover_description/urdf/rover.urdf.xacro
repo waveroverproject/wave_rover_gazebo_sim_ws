@@ -53,7 +53,7 @@
         <mesh filename="package://wave_rover_description/meshes/rover_body.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey">
-        <color rgba="0.6 0.6 0.6 1.0"/>
+        <color rgba="0.1 0.1 0.1 1.0"/>
       </material>
     </visual>
     <collision>
