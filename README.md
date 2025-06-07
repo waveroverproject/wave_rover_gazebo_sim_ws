@@ -50,3 +50,6 @@ Need to source the Gazebo setup file if this error is gotten on build of the wor
 
 This is the fix
 ```. /usr/share/gazebo/setup.sh```
+
+### Download the new Gazebo Harmonic simulator on Jammy and Humble
+```sudo apt-get install ros-humble-ros-gzharmonic```
