@@ -1,7 +1,8 @@
 # Wave the rover Gazebo sim
 
 Custom URDF model and meshes are joined together with a custom bracket.
-![image](https://github.com/user-attachments/assets/7c9eb2c9-201f-419e-b42e-184cc021e7a3)
+![image](https://github.com/user-attachments/assets/3887ecf5-f077-4465-9561-501923fa0463)
+
 
 
 Custom cone models for Gazebo.
